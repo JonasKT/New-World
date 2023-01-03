@@ -1,0 +1,357 @@
+/**************************************
+Seletor universal
+* {
+	border: 1px solid red;
+}
+/**************************************
+Seletor de texto
+h1 {
+	color: green;
+}
+/**************************************
+Seletor de classe
+.verde {
+	color: green;
+}
+/**************************************
+Seletor de classe
+p.verde {
+	color: green;
+}
+
+**************************************
+Seletor de ID
+#cabecalho {
+	border: 1px solid blue;
+	}
+**************************************
+Seletor de filho
+li>a {
+	color: red;
+	text-decoration: none;
+}
+**************************************
+Seletor de descendente
+p a {
+	color: green;
+}
+
+**************************************
+Seletor de irmão adjacente
+h1+p {
+	color: red;
+}
+**************************************
+Seletor de irmão geral
+h1~p {
+	color: pink;
+}
+*/
+
+/***************************************
+ Herança e especificidade */
+
+/* Seletores iguais, exceção important
+
+#pagina p {
+	color: red important;
+}
+
+ #pagina p {
+ 	color: blue;
+ }*/
+
+ /* Se um seletor for mais especifico que o outro 
+ a regra mais especifica será aplicada (terá precedencia sobre regras mais gerais)
+ 
+/*
+ * {
+ 	color: red;
+ }
+ h2 {/*3*/ /*
+ 	color: blue;
+ }
+
+ h2.verde {/*2*/ /*
+ 	color: green;
+ }
+
+ h2#amarelo {/*1*/ /*
+ 	color: yellow;
+ }
+  */ 
+
+/***********************
+barra de navegação ****/
+/*
+ul{
+
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+li{ 
+padding-left: 10px 20px;
+background:url(./imagens/seta.png) no-repeat left center
+
+}
+*/
+/*
+ul{
+padding: 0;
+margin: 0;
+list-style-type: none;
+}
+
+ul a {
+
+width: 200px;
+height: 40px;
+display: block;
+background:#f7b600 url(./imagens/men.png) no-repeat left bottom;
+color: #000;
+text-decoration: none;
+line-height: 40px;
+text-indent: 40px;
+
+}
+
+a:hover {
+	color: #fff;
+	background-position: right bottom;
+	background-color: #f99200; 
+}
+
+#home .home a,
+#sobre .sobre a {
+
+	color: #fff;
+	background-position: right bottom;
+	background-color: #f99200; 
+}*/
+
+/*************************
+barra de navegação horizontal*/
+/*
+ul {
+
+margin: 0;
+padding: 0;
+list-style: none;
+width: 720px;
+background: #159cb0 url(./imagens/fundo-horizontal.png) repeat-x;	
+float: left;
+}
+
+ul li {
+float: left;
+
+}
+
+ul a {
+display: block;
+padding: 0 2em;
+line-height: 2em;
+text-decoration: none;
+color: #fff;
+background: url(./imagens/divisor.png) repeat-y;
+
+}
+ul .primeiro a{
+background: none;
+
+}
+
+ul a:hover {
+color: #085608;
+background: #44cade;
+
+}
+
+#home .home a,
+#sobre .sobre a {
+
+	color: #085608;
+background: #44cade;
+}
+*/
+
+/****************
+barra de navegação com abas*/
+/*
+body {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;	
+}
+
+ul{
+
+padding: 0;
+margin: 0;
+list-style: none;
+width: 720px;
+}
+
+ul li {
+	
+	float: left;
+	background: url(./imagens/aba-direita.png) no-repeat top right;
+}
+li a{
+display: block;
+line-height: 3em;
+padding: 0 2em;
+text-decoration: none;
+background: url(./imagens/aba-esquerda.png) no-repeat top left;
+color: #fff;
+}
+
+ul a:hover {
+	color: #894a1f;
+}
+
+ul #atual {
+
+	background: url(./imagens/aba-direita-atual.png) no-repeat top right;
+}	
+
+ul #atual a{
+	background: url(./imagens/aba-esquerda-atual.png) no-repeat top left;
+}
+*/
+
+
+/******Layoutss*****/
+/*
+body{
+
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+background: #f2f2f2;	
+}
+
+#container {
+width: 960px;
+margin: 0 auto;
+background: #fff url(./imagens/coluna.png) repeat-y left top;
+min-width: 720px;
+max-width: 1280px
+}*/
+/*
+#imagem {
+
+	width: 90%;
+	overflow: hidden;
+
+}
+*/
+/*
+img.img-noticia {width: 95%;
+padding: 2%;
+max-width: 600px;}
+
+
+#marca{
+width: 100%;
+text-align: center;
+height: 200px;
+line-height: 200px;
+background: #225992 url(./imagens/cabecalho2.jpg) no-repeat center;
+
+}
+
+#conteudo {
+width: 75%;
+float: right;	
+
+}
+
+#navegacao{
+width: 23%;
+float: left;
+padding-top: 20px;
+padding-bottom: 20px;
+/*background: #d1d1d1;
+text-align: center;	
+}
+
+#navegacao ul {
+list-style: none;
+}
+
+#navegacao li a{
+text-decoration: none;
+
+}
+
+#conteudo-principal{
+	border:1px solid blue;
+width:63%;
+float: left;}
+
+#conteudo-secundario{width: 35%;
+	float: right;
+background: #d1d1d1;}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#rodape{
+	
+clear: both;
+background: #c4c4c4;
+padding: 5px;
+text-align: center;
+
+}
+
+ul{
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+h2{text-align: center;}
+*/
+
+/***********************
+estilizando tabelas*/
+
+body {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+table {
+	width: 600px;
+	border-collapse: separate /*collapse*/;
+}
+th, td{
+padding: 7px;
+
+}
+
+th{
+	text-transform: uppercase;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #111;
+	text-align: center;
+	font-size: 90%;
+	letter-spacing: 0.1em;
+}
+
+tr.alternado {
+
+	background-color: #efefef;
+
+}
+
+tr:hover{
+
+	background-color: #c3e6e5;
+}
+.numero {
+	text-align: right;
+}
